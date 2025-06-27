@@ -132,7 +132,8 @@ const app = express();
 
 // إعداد CORS
 app.use(cors({
-  origin: 'https://pdf-02ix.onrender.com/',
+  
+  origin: [ 'http://localhost:3000', 'https://pdf-frontend.onrender.com' ],
   credentials: true
 }));
 
