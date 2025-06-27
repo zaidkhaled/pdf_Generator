@@ -310,7 +310,7 @@ router.get('/:id/page-images', async (req, res) => {
     }
 
     const files = fs.readdirSync(dirPath).filter(file => file.endsWith('.png'));
-    const urls = files.map(file => `http://localhost:5000/pdf-images/${id}/${file}`);
+    const urls = files.map(file => `https://pdf-02ix.onrender.com/pdf-images/${id}/${file}`);
 
     const file = await PDFFile.findById(id);
     if (!file) return res.status(404).json({ error: 'الملف غير موجود' });
