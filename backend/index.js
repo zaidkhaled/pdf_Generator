@@ -133,7 +133,7 @@ const app = express();
 // إعداد CORS
 app.use(cors({
   
-  origin:  'http://localhost:3000',
+  origin:'https://pdf-generator-pink-phi.vercel.app',
   credentials: true
 }));
 
