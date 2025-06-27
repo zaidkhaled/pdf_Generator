@@ -23,11 +23,11 @@ export default function FabricEditor({ token }) {
       setCanvas(c);
 
       // تحميل صورة الخلفية من السيرفر (الصفحة الأولى من PDF كصورة)
-      const resPDF = await fetch(`http://localhost:5000/api/pdf/${id}`, {
+      const resPDF = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const pdfData = await resPDF.json();
-      const pdfImageUrl = `http://localhost:5000/uploads/${pdfData.filename}`;
+      const pdfImageUrl = `https://pdf-02ix.onrender.com/uploads/${pdfData.filename}`;
 
       fabric.Image.fromURL(pdfImageUrl, (img) => {
         img.set({ selectable: false, evented: false });
@@ -38,7 +38,7 @@ export default function FabricEditor({ token }) {
       });
 
       // تحميل التعديلات إن وجدت
-      const res = await fetch(`http://localhost:5000/api/pdf/${id}/fabric-annotations`, {
+      const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/fabric-annotations`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -86,7 +86,7 @@ export default function FabricEditor({ token }) {
   // ✅ حفظ التعديلات للسيرفر
   const saveChanges = async () => {
     const json = canvas.toJSON();
-    const res = await fetch(`http://localhost:5000/api/pdf/${id}/fabric-annotations`, {
+    const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/fabric-annotations`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

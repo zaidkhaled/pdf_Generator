@@ -41,7 +41,7 @@ export default function FabricEditor({ token }) {
 
     // ✅ تحميل صور صفحات PDF
     console.log("📥 جاري تحميل صور الصفحات...");
-    const res = await fetch(`http://localhost:5000/api/pdf/${id}/page-images`);
+    const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/page-images`);
     const data = await res.json();
     if (res.ok && Array.isArray(data.pages)) {
       console.log("✅ تم استلام الصور:", data.pages);
@@ -78,7 +78,7 @@ export default function FabricEditor({ token }) {
 
     // ✅ تحميل التعديلات السابقة
     console.log("📦 تحميل تعديلات fabric-annotations...");
-    const res2 = await fetch(`http://localhost:5000/api/pdf/${id}/fabric-annotations`, {
+    const res2 = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/fabric-annotations`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     const saved = await res2.json();
@@ -137,7 +137,7 @@ export default function FabricEditor({ token }) {
 
   const saveChanges = async () => {
     const json = canvas.toJSON();
-    const res = await fetch(`http://localhost:5000/api/pdf/${id}/fabric-annotations`, {
+    const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/fabric-annotations`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ export default function UploadForm({ token, onUploadSuccess }) {
     formData.append('allowEditByOthers', allowEdit);
 
     try {
-      const res = await fetch('http://localhost:5000/api/pdf/upload', {
+      const res = await fetch('https://pdf-02ix.onrender.com/api/pdf/upload', {
         method: 'POST',
         headers: {
           Authorization: 'Bearer ' + token,

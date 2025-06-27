@@ -17,15 +17,15 @@
 
 //   useEffect(() => {
 //     const fetchPDF = async () => {
-//       const res = await fetch(`http://localhost:5000/api/pdf/${id}`, {
+//       const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}`, {
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
 //       const data = await res.json();
-//       setFileUrl(`http://localhost:5000/uploads/${data.filename}`);
+//       setFileUrl(`https://pdf-02ix.onrender.com/uploads/${data.filename}`);
 //     };
 
 //     const fetchAnnotations = async () => {
-//       const res = await fetch(`http://localhost:5000/api/pdf/${id}/annotations`, {
+//       const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/annotations`, {
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
 //       const data = await res.json();
@@ -52,7 +52,7 @@
 
 //   const handleSaveComment = async () => {
 //     if (!newComment.trim()) return;
-//     const res = await fetch(`http://localhost:5000/api/pdf/${id}/annotations`, {
+//     const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/annotations`, {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -165,15 +165,15 @@ export default function EditPDF({ token }) {
 
   useEffect(() => {
     const fetchPDF = async () => {
-      const res = await fetch(`http://localhost:5000/api/pdf/${id}`, {
+      const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
-      setFileUrl(`http://localhost:5000/uploads/${data.filename}`);
+      setFileUrl(`https://pdf-02ix.onrender.com/uploads/${data.filename}`);
     };
 
     const fetchAnnotations = async () => {
-      const res = await fetch(`http://localhost:5000/api/pdf/${id}/annotations`, {
+      const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/annotations`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -202,7 +202,7 @@ export default function EditPDF({ token }) {
 
   const handleSaveComment = async () => {
     if (!newComment.trim()) return;
-    const res = await fetch(`http://localhost:5000/api/pdf/${id}/annotations`, {
+    const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/annotations`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

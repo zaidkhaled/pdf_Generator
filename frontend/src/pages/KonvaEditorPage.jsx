@@ -11,7 +11,7 @@
 //     const fetchPageImages = async () => {
 //       try {
 //         console.log('📦 بدء تحميل صور الصفحات...');
-//         const res = await fetch(`http://localhost:5000/api/pdf/${id}/page-images`);
+//         const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/page-images`);
 //         const data = await res.json();
 
 //         if (res.ok && data.pages) {
@@ -65,7 +65,7 @@
 //     const fetchPageImages = async () => {
 //       try {
 //         console.log('📦 بدء تحميل صور الصفحات...');
-//         const res = await fetch(`http://localhost:5000/api/pdf/${id}/page-images`);
+//         const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/page-images`);
 //         const data = await res.json();
 
 //         if (res.ok && data.pages) {
@@ -162,14 +162,14 @@
 
 //     const fetchData = async () => {
 //     try {
-//       const res1 = await fetch(`http://localhost:5000/api/pdf/${id}/page-images`);
+//       const res1 = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/page-images`);
 //       const data1 = await res1.json();
 
 //       const fileOwnerId = data1.userId;
 //       setFileOwnerId(data1.userId);
 
 
-//       const res2 = await fetch(`http://localhost:5000/api/pdf/${id}/annotations`, {
+//       const res2 = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/annotations`, {
 //         headers: {
 //           Authorization: `Bearer ${token.token}`
 //         }
@@ -201,7 +201,7 @@
 //     const fetchPageImages = async () => {
 //       try {
 //         console.log('📦 بدء تحميل صور الصفحات...');
-//         const res = await fetch(`http://localhost:5000/api/pdf/${id}/page-images`);
+//         const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/page-images`);
 //         const data = await res.json();
 
 //         if (res.ok && data.pages) {
@@ -253,7 +253,7 @@
 //   });
 
 //   try {
-//     const res = await fetch(`http://localhost:5000/api/pdf/${id}/annotations`, {
+//     const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/annotations`, {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -345,12 +345,12 @@ useEffect(() => {
 
   const fetchData = async () => {
     try {
-      const res1 = await fetch(`http://localhost:5000/api/pdf/${id}/page-images`);
+      const res1 = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/page-images`);
       const data1 = await res1.json();
 
       setFileOwnerId(data1.userId); // 👈 هذه أيضا مهمة
 
-      const res2 = await fetch(`http://localhost:5000/api/pdf/${id}/annotations`, {
+      const res2 = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/annotations`, {
         headers: {
           Authorization: `Bearer ${token.token}`
         }
@@ -406,7 +406,7 @@ useEffect(() => {
     });
 
     try {
-      const res = await fetch(`http://localhost:5000/api/pdf/${id}/annotations`, {
+      const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}/annotations`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

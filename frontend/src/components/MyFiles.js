@@ -11,7 +11,7 @@
 //   useEffect(() => {
 //     const fetchMyFiles = async () => {
 //       try {
-//         const res = await fetch('http://localhost:5000/api/pdf/myfiles', {
+//         const res = await fetch('https://pdf-02ix.onrender.com/api/pdf/myfiles', {
 //           headers: {
 //             Authorization: `Bearer ${token}`,
 //           },
@@ -25,7 +25,7 @@
 
 //     const fetchPublicFiles = async () => {
 //       try {
-//         const res = await fetch('http://localhost:5000/api/pdf/public-files', {
+//         const res = await fetch('https://pdf-02ix.onrender.com/api/pdf/public-files', {
 //           headers: {
 //             Authorization: `Bearer ${token}`,
 //           },
@@ -47,7 +47,7 @@
 //   const handleDelete = async (id) => {
 //     if (!window.confirm('هل أنت متأكد من حذف الملف؟')) return;
 //     try {
-//       const res = await fetch(`http://localhost:5000/api/pdf/${id}`, {
+//       const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}`, {
 //         method: 'DELETE',
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
@@ -73,9 +73,9 @@
 //       className="bg-white shadow rounded p-3 border hover:shadow-md transition"
 //     >
 //       <PDFThumbnail
-//         url={`http://localhost:5000/uploads/${file.filename}`}
+//         url={`https://pdf-02ix.onrender.com/uploads/${file.filename}`}
 //         onClick={() =>
-//           setSelectedFileUrl(`http://localhost:5000/uploads/${file.filename}`)
+//           setSelectedFileUrl(`https://pdf-02ix.onrender.com/uploads/${file.filename}`)
 //         }
 //       />
 //       <h3 className="font-semibold truncate mt-2">{file.originalname}</h3>
@@ -147,7 +147,7 @@
 //   useEffect(() => {
 //     const fetchMyFiles = async () => {
 //       try {
-//         const res = await fetch('http://localhost:5000/api/pdf/myfiles', {
+//         const res = await fetch('https://pdf-02ix.onrender.com/api/pdf/myfiles', {
 //           headers: { Authorization: `Bearer ${token}` },
 //         });
 //         const data = await res.json();
@@ -159,7 +159,7 @@
 
 //     const fetchPublicFiles = async () => {
 //       try {
-//         const res = await fetch('http://localhost:5000/api/pdf/public-files', {
+//         const res = await fetch('https://pdf-02ix.onrender.com/api/pdf/public-files', {
 //           headers: { Authorization: `Bearer ${token}` },
 //         });
 //         const data = await res.json();
@@ -178,7 +178,7 @@
 //   const handleDelete = async (id) => {
 //     if (!window.confirm('هل أنت متأكد من حذف الملف؟')) return;
 //     try {
-//       const res = await fetch(`http://localhost:5000/api/pdf/${id}`, {
+//       const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}`, {
 //         method: 'DELETE',
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
@@ -219,9 +219,9 @@
 //       className="bg-white shadow rounded p-3 border hover:shadow-md transition relative"
 //     >
 //       <PDFThumbnail
-//         url={`http://localhost:5000/uploads/${file.filename}`}
+//         url={`https://pdf-02ix.onrender.com/uploads/${file.filename}`}
 //         onClick={() =>
-//           setSelectedFileUrl(`http://localhost:5000/uploads/${file.filename}`)
+//           setSelectedFileUrl(`https://pdf-02ix.onrender.com/uploads/${file.filename}`)
 //         }
 //       />
 //       <h3 className="font-semibold truncate mt-2">{file.originalname}</h3>
@@ -273,7 +273,7 @@
 //                 key={file._id}
 //                 className="flex justify-between items-center border-b pb-1 hover:bg-gray-50 px-2 cursor-pointer"
 //                 onClick={() =>
-//                   setSelectedFileUrl(`http://localhost:5000/uploads/${file.filename}`)
+//                   setSelectedFileUrl(`https://pdf-02ix.onrender.com/uploads/${file.filename}`)
 //                 }
 //               >
 //                 <span>{file.originalname}</span>
@@ -345,7 +345,7 @@ export default function MyFiles({ token }) {
     const fetchMyFiles = async () => {
       try {
 
-        const res = await fetch('http://localhost:5000/api/pdf/myfiles', {
+        const res = await fetch('https://pdf-02ix.onrender.com/api/pdf/myfiles', {
           headers: { Authorization: `Bearer ${token }` },
         });
         const data = await res.json();
@@ -357,7 +357,7 @@ export default function MyFiles({ token }) {
 
     const fetchPublicFiles = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/pdf/public-files', {
+        const res = await fetch('https://pdf-02ix.onrender.com/api/pdf/public-files', {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();
@@ -376,7 +376,7 @@ export default function MyFiles({ token }) {
   const handleDelete = async (id) => {
     if (!window.confirm('هل أنت متأكد من حذف الملف؟')) return;
     try {
-      const res = await fetch(`http://localhost:5000/api/pdf/${id}`, {
+      const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -417,9 +417,9 @@ export default function MyFiles({ token }) {
   //     className="bg-white shadow rounded p-3 border hover:shadow-md transition relative"
   //   >
   //     <PDFThumbnail
-  //       url={`http://localhost:5000/uploads/${file.filename}`}
+  //       url={`https://pdf-02ix.onrender.com/uploads/${file.filename}`}
   //       onClick={() =>
-  //         setSelectedFileUrl(`http://localhost:5000/uploads/${file.filename}`)
+  //         setSelectedFileUrl(`https://pdf-02ix.onrender.com/uploads/${file.filename}`)
   //       }
   //     />
   //     <h3 className="font-semibold truncate mt-2">{file.originalname}</h3>
@@ -453,9 +453,9 @@ export default function MyFiles({ token }) {
     className="bg-white shadow rounded p-3 border hover:shadow-md transition relative"
   >
     <PDFThumbnail
-      url={`http://localhost:5000/uploads/${file.filename}`}
+      url={`https://pdf-02ix.onrender.com/uploads/${file.filename}`}
       // onClick={() =>
-      //   setSelectedFileUrl(`http://localhost:5000/uploads/${file.filename}`)
+      //   setSelectedFileUrl(`https://pdf-02ix.onrender.com/uploads/${file.filename}`)
       // }
 
       onClick={() =>
@@ -529,7 +529,7 @@ export default function MyFiles({ token }) {
                 key={file._id}
                 className="flex justify-between items-center border-b pb-1 hover:bg-gray-50 px-2 cursor-pointer"
                 // onClick={() =>
-                //   setSelectedFileUrl(`http://localhost:5000/uploads/${file.filename}`)
+                //   setSelectedFileUrl(`https://pdf-02ix.onrender.com/uploads/${file.filename}`)
                 // }
 
                 onClick={() =>
@@ -584,7 +584,7 @@ export default function MyFiles({ token }) {
       )} */}
       {selectedFile && (
   <PDFViewerModal
-    url={`http://localhost:5000/uploads/${selectedFile.filename}`}
+    url={`https://pdf-02ix.onrender.com/uploads/${selectedFile.filename}`}
     fileId={selectedFile._id}
     onClose={() => setSelectedFile(null)}
   />
