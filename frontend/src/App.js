@@ -111,16 +111,6 @@ function App() {
 
 
 
-localStorage.clear();
-
-
-
-
-
-
-
-
-
 
 
 
