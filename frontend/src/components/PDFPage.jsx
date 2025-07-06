@@ -1214,7 +1214,7 @@ const PDFPage = forwardRef(function PDFPage(props, ref) {
   if (!canReset) return;
 
   try {
-    const res = await fetch(`https://pdf-02ix.onrender.com/api/pdf/${fileId}/annotations/${pageIndex}`, {
+    const res = await fetch(`https://pdf-generator-1-l8no.onrender.com/api/pdf/${fileId}/annotations/${pageIndex}`, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${token}`,

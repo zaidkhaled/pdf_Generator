@@ -14,7 +14,7 @@
 //     localStorage.setItem('token', newToken); // ✅ حفظ التوكن
 
 //     try {
-//       const res = await fetch('https://pdf-02ix.onrender.com/api/auth/me', {
+//       const res = await fetch('https://pdf-generator-1-l8no.onrender.com/api/auth/me', {
 //         headers: {
 //           Authorization: `Bearer ${newToken}`,
 //         },
@@ -42,7 +42,7 @@
 //       if (!token) return;
 
 //       try {
-//         const res = await fetch('https://pdf-02ix.onrender.com/api/auth/me', {
+//         const res = await fetch('https://pdf-generator-1-l8no.onrender.com/api/auth/me', {
 //           headers: {
 //             Authorization: `Bearer ${token}`,
 //           },
@@ -109,7 +109,7 @@ function App() {
     localStorage.setItem('token', newToken);
 
     try {
-      const res = await fetch('https://pdf-02ix.onrender.com/api/auth/me', {
+      const res = await fetch('https://pdf-generator-1-l8no.onrender.com/api/auth/me', {
         headers: {
           Authorization: `Bearer ${newToken}`,
         },
@@ -136,7 +136,7 @@ function App() {
       if (!token) return;
 
       try {
-        const res = await fetch('https://pdf-02ix.onrender.com/api/auth/me', {
+        const res = await fetch('https://pdf-generator-1-l8no.onrender.com/api/auth/me', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
